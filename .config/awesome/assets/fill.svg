@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="922"
+   height="1024"
+   viewBox="0 0 922 1024"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter2"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feComposite
+         in2="SourceGraphic"
+         operator="arithmetic"
+         k1="10"
+         k2="10"
+         result="composite1"
+         id="feComposite1"
+         k3="0"
+         k4="0" />
+      <feColorMatrix
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1"
+         id="feColorMatrix1" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(238,238,238)"
+         result="flood1"
+         id="feFlood1" />
+      <feBlend
+         in="flood1"
+         in2="colormatrix1"
+         mode="normal"
+         result="blend1"
+         id="feBlend1" />
+      <feBlend
+         in2="blend1"
+         mode="normal"
+         result="blend2"
+         id="feBlend2" />
+      <feColorMatrix
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2"
+         id="feColorMatrix2" />
+      <feComposite
+         in="colormatrix2"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite2"
+         id="feComposite2" />
+    </filter>
+  </defs>
+  <g
+     id="g1">
+    <image
+       width="922"
+       height="1024"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,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&#10;YII=&#10;"
+       id="image1"
+       style="filter:url(#filter2)" />
+  </g>
+</svg>

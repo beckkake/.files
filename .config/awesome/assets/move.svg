@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="1024"
+   height="1024"
+   viewBox="0 0 1024 1024"
+   sodipodi:docname="move.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.76953125"
+     inkscape:cx="512"
+     inkscape:cy="512"
+     inkscape:window-width="1900"
+     inkscape:window-height="1010"
+     inkscape:window-x="10"
+     inkscape:window-y="60"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Colorize"
+       id="filter2"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feComposite
+         in2="SourceGraphic"
+         operator="arithmetic"
+         k1="10"
+         k2="10"
+         result="composite1"
+         id="feComposite1" />
+      <feColorMatrix
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1"
+         id="feColorMatrix1" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(238,238,238)"
+         result="flood1"
+         id="feFlood1" />
+      <feBlend
+         in="flood1"
+         in2="colormatrix1"
+         mode="normal"
+         result="blend1"
+         id="feBlend1" />
+      <feBlend
+         in2="blend1"
+         mode="normal"
+         result="blend2"
+         id="feBlend2" />
+      <feColorMatrix
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2"
+         id="feColorMatrix2" />
+      <feComposite
+         in="colormatrix2"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="composite2"
+         id="feComposite2" />
+    </filter>
+  </defs>
+  <g
+     id="g1"
+     style="filter:url(#filter2)">
+    <path
+       style="fill:#000000"
+       d="M 469,981.5 V 939 H 426.5 384 V 896 853 H 341.5 299 V 810.5 768 H 341.5 384 V 810.5 853 H 426.5 469 V 704 555 H 320 171 V 597.5 640 H 213.5 256 V 682.5 725 H 213.5 171 V 682.5 640 H 128 85 V 597.5 555 H 42.5 0 V 512 469 H 42.5 85 V 426.5 384 h 43 43 V 341.5 299 H 213.5 256 V 341.5 384 H 213.5 171 V 426.5 469 H 320 469 V 320 171 H 426.5 384 V 213.5 256 H 341.5 299 V 213.5 171 H 341.5 384 V 128 85 H 426.5 469 V 42.5 0 h 43 43 V 42.5 85 h 42.5 42.5 v 43 43 H 682.5 725 V 213.5 256 H 682.5 640 V 213.5 171 H 597.5 555 V 320 469 H 704 853 V 426.5 384 H 810.5 768 V 341.5 299 h 42.5 42.5 v 42.5 42.5 h 43 43 v 42.5 42.5 h 42.5 42.5 v 43 43 H 981.5 939 V 597.5 640 H 896 853 V 682.5 725 H 810.5 768 V 682.5 640 H 810.5 853 V 597.5 555 H 704 555 V 704 853 H 597.5 640 V 810.5 768 H 682.5 725 V 810.5 853 H 682.5 640 v 43 43 H 597.5 555 v 42.5 42.5 h -43 -43 z"
+       id="path1" />
+  </g>
+</svg>

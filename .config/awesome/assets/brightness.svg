@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="1024"
+   height="1024"
+   viewBox="0 0 1024 1024"
+   sodipodi:docname="brightness.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.76953125"
+     inkscape:cx="512"
+     inkscape:cy="512"
+     inkscape:window-width="1900"
+     inkscape:window-height="1010"
+     inkscape:window-x="10"
+     inkscape:window-y="60"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Colorize"
+       id="filter2"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feComposite
+         in2="SourceGraphic"
+         operator="arithmetic"
+         k1="10"
+         k2="10"
+         result="composite1"
+         id="feComposite1" />
+      <feColorMatrix
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1"
+         id="feColorMatrix1" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(238,238,238)"
+         result="flood1"
+         id="feFlood1" />
+      <feBlend
+         in="flood1"
+         in2="colormatrix1"
+         mode="normal"
+         result="blend1"
+         id="feBlend1" />
+      <feBlend
+         in2="blend1"
+         mode="normal"
+         result="blend2"
+         id="feBlend2" />
+      <feColorMatrix
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2"
+         id="feColorMatrix2" />
+      <feComposite
+         in="colormatrix2"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="fbSourceGraphic"
+         id="feComposite2" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3" />
+      <feComposite
+         id="feComposite3"
+         in2="fbSourceGraphic"
+         operator="arithmetic"
+         k1="10"
+         k2="10"
+         result="composite1"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix4"
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1" />
+      <feFlood
+         id="feFlood4"
+         flood-opacity="1"
+         flood-color="rgb(238,238,238)"
+         result="flood1" />
+      <feBlend
+         id="feBlend4"
+         in="flood1"
+         in2="colormatrix1"
+         mode="normal"
+         result="blend1" />
+      <feBlend
+         id="feBlend5"
+         in2="blend1"
+         mode="normal"
+         result="blend2" />
+      <feColorMatrix
+         id="feColorMatrix5"
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2" />
+      <feComposite
+         id="feComposite5"
+         in="colormatrix2"
+         in2="fbSourceGraphic"
+         operator="in"
+         k2="1"
+         result="composite2" />
+    </filter>
+  </defs>
+  <g
+     id="g1"
+     style="filter:url(#filter2)">
+    <image
+       width="1024"
+       height="1024"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAQACAMAAABIw9uxAAAABGdBTUEAALGPC/xhBQAAACBjSFJN&#10;AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH5QQaBBUUah+rHwAA&#10;AP9QTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&#10;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&#10;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&#10;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&#10;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+uKHIgAAAFR0Uk5TAAMGBwgLDA0ODxAW&#10;GRscHR4fICIjJCYnKCkqKywtLjc6PT5KS0xNYWh9foCBgoSFh4iJipOen6y0tba5uru8vcDBwsXG&#10;x9LT1Njc3d7k6+/w8fLzzujsmgAAAAFiS0dEVOQDiKUAAAyKSURBVHja7djrdtNGFIBR62LH2Cbx&#10;YtECLXRBef9H4lZogQKJbCzHN0l9AX70h3JIRnu/wCydGX0eORuRgPnTe23ogvn1h9rYE1AaQQoW&#10;y9+a0AWLfyoBEABuieKsKGJXPCtMPQW5ESShS35BBAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEA&#10;BAAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAE&#10;ABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQA&#10;EABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAEwAhAA&#10;QAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQACAm1bGJ2c+72JX&#10;3G2a1LfxuN/FPmOxPyb/bhSLaeyCWV236Qdg8WwZfFav316mflZXn69iq5odVskH4OL5veCTWr1f&#10;px+A+cWT4BUvF8kH4PDOZbb/n6rlg+AVu8vwAMT/B9B24Ut2DjN34dh04V8A/gSEIRMAEABAAAAB&#10;AAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQA&#10;EABAAAABAAQAEABAAAABAAQABMAIQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAA&#10;QAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAEABAAAABAAQAEABA&#10;AAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAAB&#10;AAQAEABAAIDbEIBsNIQlufsGcVLL8BV3+1UT27h1Hb2NF8u88wL1O9O2WgXPtF7nbeiCxX43gOQU&#10;F4vYjczq1Sn2Eccvfy8FoOddPP396hj843gxDz6pm+Dfxp9yA2guL5P/rsoXY69sz4559Ofq6ds3&#10;/wEAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAA&#10;AgAIACAAgAAAAgAIACAAgACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAAC&#10;AAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAIAAAAIACAAgAIAAAAIA&#10;CAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAg&#10;AIAAAAIACAAgAIAAgAAAAgAIADAM5QCeMStjM9eNR23XOVv9bmI7GndZ6JLtaQCbmA3g7CwfRz9l&#10;7mJ1A+9jG7xg96lyA0giAE/nsVFt3r7fZ97Yft/Gs2d/FrG/yPVOAJKQl+PgBUeHa69s73fVcfC9&#10;qhzCPW4Qd1Xf4zg2Aw4AIACAAAACAAgACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAA&#10;AAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAIACAAgAAA&#10;AgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAI&#10;ACAAgAAAAgAIACAAgAAAAgACYAQgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAg&#10;AIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAP9XOZ+XXeiKx/XB2PtW3J/F7mK2/d4Ye98m&#10;5+PYXTzV5dPlWejRyXaf39npvp2/OI99H4v1mytj79uTR9PYl3FflbNHk9iH3FY2unezxcPgFduZ&#10;APTu7OEsdsHDIW+jH7JrbXT/Q+3SX3EA2vChtv4EhAETABAAQAAAAQAEABAAQAAAAQAEABAAQAAA&#10;AQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAE&#10;AATACEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQ&#10;AEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAA&#10;QAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQACAHwQgvACZ5tzA&#10;ULP0VxzC2xg+1Lzcfp62oQdnt7fRvdvWX5vQBYt6a+q923+ddqGv/25bfqiK2Ic8rmx079avZ6En&#10;Z5Rt16beu4/bceyCzaasa3O/+5qrK0O4+w5f4r86TB2GSwBAAAABAAQAEABAAAABAAQAEABAAAAB&#10;AAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQA&#10;EAAQACMAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAA&#10;QAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABA&#10;AAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAYagMw+49j8&#10;UDmAZ2xPx9iD04wmratVz5s4GR2LLnTJU6tySVg+jn4bM3eO/nVd8ILtp0oAknjGMjYA3eSPl5PO&#10;G9vvJh5e/XWIPa3taQCbOIRPgO4YfVhHuTtA3/LR8WAKNzBWQAAAAQAEABAAQAAAAQAEABAAQAAA&#10;AQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAEABAAQAAAAQAE&#10;ABAAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQA&#10;EABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQ&#10;AEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAYjcrw&#10;FYvzRRe6YLZdnWIfsW3rsnO2+t3FU9tGvxsXs+CTulk36Qfg/osHsU9ZVG++xT7i6dPOzar3qlbB&#10;GR9dvFgGn9TL11X6AZieLaOPzjw4AF1VeWHvvvl59EmtpwP4D+An3I1dx3FSb0sAgFtDAEAAAAEA&#10;BAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQ&#10;AEAAAAEABAAQAEAAAAEABAAQABAAIwABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABA&#10;AAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAAABAAQAEABAAEAAAAEABAAQAEAA&#10;AAEABAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEABAAQAEAAAAEA&#10;BAAQAEAAAAEAbkMA8ix8ycw+cxeOTRb/OpbhK9arvIktzvUm+bM6eTJpY4d6+HhIfaibah871GJV&#10;D6By+WLWxT7i7nuT+ln95fmvwQH49+2X1Ida3J8Gn9Ttpo1+yPgbQLteu132bTy9F7zidJz8UJvK&#10;fwCAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACAAAACAAgAIACA&#10;AAACAAgAIACAAAACAAgAIAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAA&#10;AAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgAIAAAAIACAAgACAAgAAAAgAIACAAgAAA&#10;AgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAIACAAgAAAAgAI&#10;ACAAgAAAAgAIACAAIACAAAACwN2TJb8gN6I0ghQ0+6YJXbDYN6YuANwSm+rQxt4ctxtTT8F/SKMu&#10;Owh72V8AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjEtMDQtMjZUMDQ6MjE6MjArMDA6MDBAQ0nnAAAA&#10;JXRFWHRkYXRlOm1vZGlmeQAyMDIxLTA0LTI2VDA0OjIxOjIwKzAwOjAwMR7xWwAAAABJRU5ErkJg&#10;gg==&#10;"
+       id="image1" />
+  </g>
+</svg>

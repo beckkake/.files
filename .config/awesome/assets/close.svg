@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="1024"
+   height="1024"
+   viewBox="0 0 1024 1024"
+   sodipodi:docname="close.svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.76953125"
+     inkscape:cx="512"
+     inkscape:cy="512"
+     inkscape:window-width="1900"
+     inkscape:window-height="1010"
+     inkscape:window-x="10"
+     inkscape:window-y="60"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Colorize"
+       id="filter2"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feComposite
+         in2="SourceGraphic"
+         operator="arithmetic"
+         k1="10"
+         k2="10"
+         result="composite1"
+         id="feComposite1" />
+      <feColorMatrix
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1"
+         id="feColorMatrix1" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(238,238,238)"
+         result="flood1"
+         id="feFlood1" />
+      <feBlend
+         in="flood1"
+         in2="colormatrix1"
+         mode="normal"
+         result="blend1"
+         id="feBlend1" />
+      <feBlend
+         in2="blend1"
+         mode="normal"
+         result="blend2"
+         id="feBlend2" />
+      <feColorMatrix
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2"
+         id="feColorMatrix2" />
+      <feComposite
+         in="colormatrix2"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="fbSourceGraphic"
+         id="feComposite2" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3" />
+      <feComposite
+         id="feComposite3"
+         in2="fbSourceGraphic"
+         operator="arithmetic"
+         k1="10"
+         k2="10"
+         result="composite1"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix4"
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1" />
+      <feFlood
+         id="feFlood4"
+         flood-opacity="1"
+         flood-color="rgb(238,238,238)"
+         result="flood1" />
+      <feBlend
+         id="feBlend4"
+         in="flood1"
+         in2="colormatrix1"
+         mode="normal"
+         result="blend1" />
+      <feBlend
+         id="feBlend5"
+         in2="blend1"
+         mode="normal"
+         result="blend2" />
+      <feColorMatrix
+         id="feColorMatrix5"
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2" />
+      <feComposite
+         id="feComposite5"
+         in="colormatrix2"
+         in2="fbSourceGraphic"
+         operator="in"
+         k2="1"
+         result="composite2" />
+    </filter>
+  </defs>
+  <g
+     id="g1"
+     style="filter:url(#filter2)">
+    <path
+       style="fill:#000000"
+       d="M 1.6666667,1022.3333 C 1.3,1021.9667 1,989.11667 1,949.33333 V 877 h 72.993468 72.993472 l 0.25653,-72.75 0.25653,-72.75 72.74347,-0.25653 72.74347,-0.25653 0.25653,-72.74347 L 293.5,585.5 366.25,585.24347 439,584.98694 V 512 439.01306 L 366.25,438.75653 293.5,438.5 293.24347,365.75653 292.98694,293.01306 220.24347,292.75653 147.5,292.5 147.24347,219.75 146.98694,147 H 73.986935 0.98693515 L 1.2434676,74.25 1.5,1.5 74.25,1.2434676 147,0.98693515 V 73.986935 146.98694 l 72.75,0.25653 72.75,0.25653 0.25653,72.74347 0.25653,72.74347 72.74347,0.25653 L 438.5,293.5 l 0.25653,72.75 0.25653,72.75 H 512 584.98694 l 0.25653,-72.75 0.25653,-72.75 72.74347,-0.25653 72.74347,-0.25653 0.25653,-72.74347 L 731.5,147.5 804.25,147.24347 877,146.98694 V 73.986935 0.98693515 L 949.75,1.2434676 1022.5,1.5 l 0.2565,72.75 0.2566,72.75 h -73.00004 -73 l -0.25653,72.75 -0.25653,72.75 -72.74347,0.25653 -72.74347,0.25653 -0.25653,72.74347 L 730.5,438.5 657.75,438.75653 585,439.01306 V 512 584.98694 l 72.75,0.25653 72.75,0.25653 0.25653,72.74347 0.25653,72.74347 72.74347,0.25653 L 876.5,731.5 l 0.25653,72.75 0.25653,72.75 h 73 73.00004 l -0.2566,72.75 -0.2565,72.75 -72.75,0.2565 -72.75,0.2566 v -73.00004 -73 L 804.25,876.75653 731.5,876.5 731.24347,803.75653 730.98694,731.01306 658.24347,730.75653 585.5,730.5 585.24347,657.75 584.98694,585 H 512 439.01306 l -0.25653,72.75 -0.25653,72.75 -72.74347,0.25653 -72.74347,0.25653 -0.25653,72.74347 L 292.5,876.5 219.75,876.75653 147,877.01306 V 950.00653 1023 H 74.666667 c -39.783334,0 -72.6333337,-0.3 -73.0000003,-0.6667 z"
+       id="path1" />
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+require("signals.screen")
+require("signals.ruled")
+require("signals.battery")
+require("signals.focus")
+require("signals.notifications")
+require("signals.tags")
+require("signals.titlebars")
+require("signals.bindings")
