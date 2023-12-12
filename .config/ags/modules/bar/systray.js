@@ -28,7 +28,7 @@ export const TrayItems = () =>
   });
 
 export const trayRevealer = Revealer({
-  transition: "slide_left",
+  transition: "slide_right",
   child: TrayItems(),
 });
 
