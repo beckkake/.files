@@ -55,7 +55,7 @@ label {
   color: #eeeeee;
 }
 
-.systray button {
+.trayIcon {
   all: unset;
   background-color: #282828;
   background: #282828;

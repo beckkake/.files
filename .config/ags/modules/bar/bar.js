@@ -1,11 +1,7 @@
-import Hyprland from "resource:///com/github/Aylur/ags/service/hyprland.js";
 import Notifications from "resource:///com/github/Aylur/ags/service/notifications.js";
-import Audio from "resource:///com/github/Aylur/ags/service/audio.js";
-import Battery from "resource:///com/github/Aylur/ags/service/battery.js";
 import SystemTray from "resource:///com/github/Aylur/ags/service/systemtray.js";
-import App from "resource:///com/github/Aylur/ags/app.js";
 import Widget from "resource:///com/github/Aylur/ags/widget.js";
-import { exec, execAsync } from "resource:///com/github/Aylur/ags/utils.js";
+import { execAsync } from "resource:///com/github/Aylur/ags/utils.js";
 
 const Clock = () =>
   Widget.Label({
@@ -47,11 +43,10 @@ const Notification = () =>
     ],
   });
 
-const RevIcon = () =>
-  Widget.Label({
-    className: "systraybtn",
-    label: "<",
-  });
+const RevIcon = Widget.Label({
+  className: "systraybtn",
+  label: "<",
+});
 
 const TrayItems = () =>
   Widget.Box({
@@ -73,23 +68,20 @@ const TrayItems = () =>
     ],
   });
 
+const trayRevealer = Widget.Revealer({
+  transition: "slide_left",
+  child: TrayItems(),
+});
+
 export const Tray = () =>
   Widget.EventBox({
     on_primary_click: (self) => {
-      self.child.children[0].label = self.child.children[1].revealChild
-        ? "<"
-        : "<";
-      self.child.children[1].revealChild = !self.child.children[1].revealChild;
+      trayRevealer.revealChild = !trayRevealer.revealChild;
+      revIcon.label = trayRevealer.revealChild ? ">" : "<";
     },
     child: Widget.Box({
       className: "tray",
-      children: [
-        RevIcon(),
-        Widget.Revealer({
-          transition: "slide_left",
-          child: TrayItems(),
-        }),
-      ],
+      children: [trayRevealer, RevIcon],
     }),
   });
 

@@ -1,4 +1,4 @@
-import { Utils, App } from "./imports.js";
+import { App } from "./imports.js";
 import { Bar } from "./modules/bar/bar.js";
 
 export default {
