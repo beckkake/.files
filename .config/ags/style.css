@@ -1,58 +1,47 @@
+/* FONT */
+
 label {
   font-family: "CozetteHiDpi";
   font-size: 23px;
   color: #eeeeee;
 }
 
-.workspaces button,
-.media {
-  font-family: "CozetteHiDpi";
-  all: unset;
-  margin: 0 4px;
-  padding: 8px;
+/* TOP BAR */
+
+.bar {
+  background-color: #000000;
+  border-radius: 10px;
+}
+.window > box {
+  margin-bottom: 15px;
+  margin-top: -2px;
+}
+
+.bar {
   background: #282828;
+  border-bottom: 1px solid #eeeeee;
   background-color: #282828;
-  border-radius: 0px;
-  color: #eeeeee;
+  box-shadow: 0 0 4px 0 #000;
 }
 
-.workspaces button:hover,
-.media:hover {
-  color: #eeeeee;
-  margin: 0 4px;
-  padding: 8px;
-  border-bottom: 1px solid #eeeeee;
+.barIconTag {
+  margin: 10px 0 10px 8px;
+  padding: 2px 7px 1px 6px;
+  border: 1px solid #eeeeee;
 }
 
-.workspaces button:active,
-.media:active {
-  color: #eeeeee;
-  margin: 0 4px;
-  padding: 8px;
-  border-bottom: 1px solid #eeeeee;
+.barIconHome {
+  margin: 10px 8px 10px 0;
+  padding: 5px 7px 0 6px;
+  border: 1px solid #eeeeee;
 }
 
-.workspaces button.focused {
-  color: #eeeeee;
-  margin: 0;
-  padding: 8px;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.notification image {
-  color: #eeeeee;
-}
-
-.systraybtn {
+.trayBtn {
   background: #282828;
   margin: 10px 8px 10px 0;
   padding: 2px 7px 0 3px;
   border: 1px solid #eeeeee;
   border-radius: 0px;
-}
-
-.appLauncher button {
-  color: #eeeeee;
 }
 
 .trayIcon {
@@ -65,32 +54,8 @@ label {
   border-radius: 0px;
 }
 
-.clock {
+.barClock {
   margin: 10px 8px 10px 0;
   padding: 2px 7px 0 6px;
   border: 1px solid #eeeeee;
-}
-
-.window > box {
-  margin-bottom: 15px;
-  margin-top: -2px;
-}
-
-.tag {
-  margin: 10px 0 10px 8px;
-  padding: 2px 7px 1px 6px;
-  border: 1px solid #eeeeee;
-}
-
-.home {
-  margin: 10px 8px 10px 0;
-  padding: 5px 7px 0 6px;
-  border: 1px solid #eeeeee;
-}
-
-.bar {
-  background: #282828;
-  border-bottom: 1px solid #eeeeee;
-  background-color: #282828;
-  box-shadow: 0 0 4px 0 #000;
 }
