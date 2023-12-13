@@ -110,6 +110,7 @@ theme.layout_tile = config_path .. "assets/tile.svg"
 theme.layout_floating = config_path .. "assets/floating.svg"
 -- custom icons
 theme.arrow = config_path .. "assets/arrow.svg"
+theme.arrowRight = config_path .. "assets/arrowRight.svg"
 theme.previous = config_path .. "assets/previous.svg"
 theme.next = config_path .. "assets/next.svg"
 theme.home = config_path .. "assets/home.svg"
