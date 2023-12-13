@@ -1,3 +1,7 @@
+* {
+  all: unset;
+}
+
 /* FONT */
 
 label {
@@ -18,6 +22,7 @@ label {
 }
 
 .bar {
+  border-radius: 0px;
   background: #282828;
   border-bottom: 1px solid #eeeeee;
   background-color: #282828;
@@ -45,7 +50,6 @@ label {
 }
 
 .trayIcon {
-  all: unset;
   background-color: #282828;
   background: #282828;
   color: #eeeeee;
