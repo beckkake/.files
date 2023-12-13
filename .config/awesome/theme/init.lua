@@ -27,7 +27,7 @@ theme.blue = color.blue
 theme.purple = color.purple
 theme.magenta = color.magenta
 
-theme.accent = "#229FF7"
+theme.accent = "#A0AAB2"
 
 theme.bg_dark = color.bg_dark
 theme.bg_dim = color.bg_dim
