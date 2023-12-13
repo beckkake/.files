@@ -9,7 +9,7 @@ local helpers = require("base.helpers.extras")
 local icons = {}
 
 -- make a widget template
-function imageWidget(image, margin)
+function imageWidget(image, margin, left, right, left2, right2)
     return wibox.widget {
         {
             {
@@ -29,7 +29,12 @@ function imageWidget(image, margin)
                     valign = "center"
                 },
                 widget = wibox.container.margin,
-                margins = margin
+                margins = {
+                    top = margin,
+                    bottom = margin,
+                    left = left,
+                    right = right
+                }
             },
             widget = wibox.container.background,
             id = "bg",
@@ -40,8 +45,8 @@ function imageWidget(image, margin)
         margins = {
             top = dpi(10),
             bottom = dpi(10),
-            left = dpi(0),
-            right = dpi(0)
+            left = left2,
+            right = right2
         }
     }
 end
@@ -77,21 +82,24 @@ function hoverImage(widget, hoverIcon, normalIcon)
 end
 
 -- initialize widgets
-icons.main = imageWidget(beautiful.main, dpi(5))
+icons.main = imageWidget(beautiful.main, dpi(5), dpi(5), dpi(5), dpi(8), dpi(0))
 helpers.hoverCursor(icons.main)
 
-icons.settings = imageWidget(beautiful.settings, dpi(5))
+icons.settings = imageWidget(beautiful.settings, dpi(5), dpi(5), dpi(5), dpi(8),
+                             dpi(0))
 helpers.hoverCursor(icons.settings)
 
-icons.logout = imageWidget(beautiful.logout, dpi(5))
+icons.logout = imageWidget(beautiful.logout, dpi(5), dpi(5), dpi(5), dpi(8),
+                           dpi(0))
 helpers.hoverCursor(icons.logout)
 
-icons.notifications = imageWidget(beautiful.notifications, {
-    top = dpi(5),
-    bottom = dpi(5),
-    left = dpi(7),
-    right = dpi(5)
-})
+icons.arrow = imageWidget(beautiful.previous, dpi(5), dpi(5), dpi(5), dpi(0),
+                          dpi(8))
+icons.arrowRight = imageWidget(beautiful.next, dpi(5), dpi(5), dpi(5), dpi(0),
+                               dpi(8))
+
+icons.notifications = imageWidget(beautiful.notifications, dpi(5), dpi(7),
+                                  dpi(5), dpi(8), dpi(0))
 helpers.hoverCursor(icons.notifications)
 
 -- volume bar

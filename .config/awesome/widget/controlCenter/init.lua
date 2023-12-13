@@ -72,31 +72,22 @@ awful.spawn.easy_async_with_shell("whoami && printf '@' && uname -n",
 
 end)
 
-local tag = {
+local spacer = {
     {
-        {
-            {
-
-                {
-                    widget = wibox.widget.imagebox,
-                    resize = true,
-                    forced_height = 20,
-                    forced_width = 20,
-                    image = beautiful.tag
-                },
-                widget = wibox.container.place,
-                halign = "center",
-                valign = "center"
-            },
-            widget = wibox.container.margin,
-            margins = dpi(5)
-        },
-        widget = wibox.container.background,
-        shape_border_width = user.border,
-        shape_border_color = beautiful.fg_normal
+        widget = wibox.widget.separator,
+        forced_height = dpi(1),
+        forced_width = dpi(20),
+        thickness = dpi(1),
+        color = beautiful.fg_normal,
+        position = "vertical"
     },
     widget = wibox.container.margin,
-    margins = {top = dpi(10), bottom = dpi(10), left = dpi(0), right = dpi(0)}
+    margins = {
+        top = dpi(-10),
+        bottom = dpi(10),
+        left = dpi(-10),
+        right = dpi(-10)
+    }
 }
 
 -- do this for some reason 
@@ -106,119 +97,116 @@ screen.connect_signal("request::desktop_decoration", function(s)
     awful.screen.connect_for_each_screen(function(s)
         controlCenterPopup = awful.popup {
             widget = {
+
                 {
                     {
+
                         {
-                            icons.main,
-                            icons.settings,
-                            icons.notifications,
-                            layout = wibox.layout.fixed.horizontal,
-                            spacing = 8
+                            {
+                                -- icons
+
+                                {
+                                    icons.arrow,
+                                    icons.arrowRight,
+                                    layout = wibox.layout.fixed.horizontal,
+                                    spacing = 0
+                                },
+                                widget = wibox.container.place,
+                                halign = "right",
+                                valign = "top"
+                            },
+                            -- background
+                            bg = beautiful.bg_dark,
+                            forced_width = 400,
+                            widget = wibox.container.background
+                        },
+                        widget = wibox.container.margin,
+                        margins = {bottom = dpi(8)}
+                    },
+                    spacer,
+                    layout = wibox.layout.fixed.vertical
+                },
+                layout = wibox.layout.align.horizontal,
+                {
+                    {
+
+                        {
+
+                            {
+                                wibox.widget.textbox("Good morning, " ..
+                                                         user.name .. "!"),
+                                widget = wibox.container.margin,
+                                margins = {top = dpi(-24), right = dpi(12)}
+                            },
+                            {
+                                {
+                                    {
+                                        widget = wibox.widget.imagebox,
+                                        image = "/home/beck/Pictures/Profile Pictures/blue girl.gif",
+                                        forced_width = 100,
+                                        forced_height = 100
+                                    },
+                                    widget = wibox.container.margin,
+                                    margins = dpi(5)
+                                },
+                                widget = wibox.container.background,
+                                bg = beautiful.bg_normal,
+                                shape_border_width = dpi(1),
+                                shape_border_color = beautiful.fg_normal
+                            },
+                            layout = wibox.layout.align.horizontal
                         },
                         widget = wibox.container.place,
-                        halign = "left",
+                        halign = "right",
                         valign = "top"
                     },
                     widget = wibox.container.margin,
-                    margins = {
-                        top = dpi(0),
-                        bottom = dpi(0),
-                        left = dpi(8),
-                        right = dpi(8)
-                    }
+                    margins = {right = dpi(8), bottom = dpi(8)}
                 },
                 {
                     {
                         {
-                            {
-                                layouts,
-                                toggleButton,
-                                logout(),
-                                layout = wibox.layout.fixed.horizontal,
-                                spacing = 8
-
-                            },
-                            widget = wibox.container.place,
-                            halign = "left",
-                            valign = "top"
-
-                        },
-                        widget = wibox.container.margin,
-                        margins = {
-                            top = dpi(-12),
-                            bottom = dpi(-12),
-                            left = dpi(8),
-                            right = dpi(8)
-                        }
-                    },
-                    layout = wibox.layout.fixed.horizontal
-                },
-                {
-                    {
-                        {
-                            {
-
-                                wibox.widget.textbox(
-                                    "Hello, " .. user.name .. "!"),
-                                layout = wibox.layout.fixed.horizontal
-                            },
+                            {userTextbox, layout = wibox.layout.fixed.vertical},
                             widget = wibox.container.place,
                             halign = "right",
                             valign = "top"
                         },
                         widget = wibox.container.margin,
-                        margins = {
-                            top = dpi(-64),
-                            bottom = dpi(0),
-                            left = dpi(274),
-                            right = dpi(8)
-                        }
-                    },
-                    layout = wibox.layout.fixed.horizontal
-                },
-                {
-                    {
-                        {
-
-                            userTextbox,
-                            widget = wibox.container.place,
-                            halign = "right",
-                            valign = "top"
-                        },
-                        widget = wibox.container.margin,
-                        margins = {
-                            top = dpi(-34),
-                            bottom = dpi(8),
-                            left = dpi(0),
-                            right = dpi(12)
-                        }
-
+                        margins = {top = dpi(-60), right = dpi(134)}
                     },
                     widget = wibox.container.background,
                     fg = beautiful.mid_light
                 },
+                {widget = wibox.container.margin, margins = {top = dpi(12)}},
+                spacer,
+                layout = wibox.layout.fixed.vertical,
                 {
                     {
-                        volume,
-                        icons.brightness,
-                        layout = wibox.layout.fixed.vertical,
-                        spacing = 12,
-                        widget = wibox.container.place,
-                        halign = "center",
-                        valign = "bottom"
+                        {
+                            {
+
+                                icons.main,
+                                icons.settings,
+                                icons.notifications,
+                                logout(),
+                                layout = wibox.layout.fixed.horizontal,
+                                spacing = 0
+                            },
+                            widget = wibox.container.place,
+                            halign = "left",
+                            valign = "top"
+                        },
+                        widget = wibox.container.background,
+                        bg = beautiful.bg_dark
                     },
                     widget = wibox.container.margin,
-                    margins = {
-                        top = dpi(275),
-                        bottom = dpi(12),
-                        left = dpi(8),
-                        right = dpi(8)
-                    }
+                    margins = {top = dpi(-8)}
                 },
+
                 layout = wibox.layout.fixed.vertical
             },
             minimum_width = 400,
-            minimum_height = 400,
+            minimum_height = 50,
             bg = beautiful.bg_normal,
             visible = false,
             border_width = user.border,
