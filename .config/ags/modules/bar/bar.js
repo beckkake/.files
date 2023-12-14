@@ -6,6 +6,7 @@ import { Notification } from "./notifications.js";
 import { Clock } from "./clock.js";
 import { Search, Home } from "./icons.js";
 
+
 const Left = () =>
   Box({
     children: [Search],

@@ -12,13 +12,10 @@ label {
 
 /* TOP BAR */
 
-.bar {
-  background-color: #000000;
-  border-radius: 10px;
-}
 .window > box {
   margin-bottom: 15px;
   margin-top: -2px;
+  background: #1e1e1e;
 }
 
 .bar {
@@ -31,18 +28,17 @@ label {
 
 .barIconSearch {
   margin: 10px 0 10px 8px;
-  padding: 7px 12px 4px 11px;
+  padding: 6px 11px 6px 11px;
   border: 1px solid #eeeeee;
 }
 
 .barIconHome {
   margin: 10px 8px 10px 0;
-  padding: 7px 0 0 11px;
+  padding: 6px 0 0 11px;
   border: 1px solid #eeeeee;
 }
 
 .trayBtn {
-  background: #282828;
   margin: 10px 8px 10px 0;
   padding: 2px 7px 0 3px;
   border: 1px solid #eeeeee;
@@ -62,4 +58,34 @@ label {
   margin: 10px 8px 10px 0;
   padding: 2px 7px 0 6px;
   border: 1px solid #eeeeee;
+}
+
+/* APP LAUNCHER */ 
+
+.applauncherSearch {
+  font-family: "CozetteHiDpi";
+  font-size: 23px;
+  background: #1e1e1e;
+  padding: 12px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.applauncherBox {
+  background: #282828;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 0 4px 0 #000;
+
+}
+
+.appItem {
+  margin: 2px 0 0 12px;
+}
+
+.appItemIcon {
+  margin: 6px 12px 0 0;
+  padding: 0 6px 0 6px;
+}
+
+.appItemDescription {
+  color: #a3a3a3;
 }
