@@ -1,12 +1,13 @@
 import { Widget } from "../../imports.js";
 const { Label } = Widget;
 
-export const Tag = Label({
-  className: "barIconTag",
-  label: "⌕",
+export const Search = Label({
+  className: "barIconSearch",
+  label: "⌘",
 });
+
 
 export const Home = Label({
   className: "barIconHome",
-  label: "",
-});
+  label: " ",
+})

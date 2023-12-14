@@ -4,11 +4,11 @@ const { Box, Window, CenterBox } = Widget;
 import { Tray } from "./systray.js";
 import { Notification } from "./notifications.js";
 import { Clock } from "./clock.js";
-import { Tag, Home } from "./icons.js";
+import { Search, Home } from "./icons.js";
 
 const Left = () =>
   Box({
-    children: [Tag],
+    children: [Search],
   });
 
 const Center = () =>
