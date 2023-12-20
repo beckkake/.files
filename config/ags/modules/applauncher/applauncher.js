@@ -1,5 +1,6 @@
 import { Widget, App, Applications } from "../../imports.js"
 const { Button, Box, Icon, Label, Entry, Scrollable, Window } = Widget;
+// import PixelatedIcon from '../pixelatedIcon.js';
 
 
 export const applauncherWindow = "applauncher";

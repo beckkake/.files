@@ -10,7 +10,7 @@ $line_break\
 $python"""
 
 [directory]
-style = "fg:#282828 bg:#a3adb5"
+style = "fg:#282828 bg:#8D6C05"
 home_symbol = "Home"
 format = " [ $path ]($style) "
 
@@ -40,7 +40,7 @@ style = "bright-black"
 
 [cmd_duration]
 format = "[$duration]($style) "
-style = "fg:#a3adb5 bg:#282828"
+style = "fg:#8D6C05 bg:#282828"
 
 [python]
 format = "[$virtualenv]($style) "

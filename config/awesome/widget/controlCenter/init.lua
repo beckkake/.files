@@ -56,7 +56,7 @@ awful.screen.connect_for_each_screen(function(s)
         margins = {
             top = dpi(10),
             bottom = dpi(10),
-            left = dpi(0),
+            left = dpi(8),
             right = dpi(0)
         }
     }
@@ -97,14 +97,12 @@ screen.connect_signal("request::desktop_decoration", function(s)
     awful.screen.connect_for_each_screen(function(s)
         controlCenterPopup = awful.popup {
             widget = {
-
                 {
                     {
 
                         {
                             {
                                 -- icons
-
                                 {
                                     icons.arrow,
                                     icons.arrowRight,
@@ -188,6 +186,8 @@ screen.connect_signal("request::desktop_decoration", function(s)
                                 icons.main,
                                 icons.settings,
                                 icons.notifications,
+                                toggleButton,
+                                layouts,
                                 logout(),
                                 layout = wibox.layout.fixed.horizontal,
                                 spacing = 0

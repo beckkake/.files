@@ -9,7 +9,7 @@ local user = require("user")
 local theme = require("theme")
 local color = require("theme.colorscheme")
 
-naughty.config.defaults.position = "bottom_right"
+naughty.config.defaults.position = "bottom_left"
 
 ruled.notification.append_rule {
     rule = {urgency = 'critical'},

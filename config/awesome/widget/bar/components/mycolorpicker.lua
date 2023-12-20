@@ -181,7 +181,7 @@ local toggleButton = wibox.widget {
         shape_border_color = beautiful.fg_normal
     },
     widget = wibox.container.margin,
-    margins = {top = dpi(10), bottom = dpi(10), left = dpi(0), right = dpi(0)}
+    margins = {top = dpi(10), bottom = dpi(10), left = dpi(8), right = dpi(0)}
 }
 
 toggleButton:connect_signal("button::release", function(_, _, _, button)

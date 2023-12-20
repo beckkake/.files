@@ -6,7 +6,7 @@ local dpi = beautiful.xresources.apply_dpi
 local user = {}
 
 user.colorscheme = "adwaita"
-user.wallpaper = wallpapers .. "robot in snow.png"
+user.wallpaper = wallpapers .. "inuyasha.png"
 user.screenshots = home .. "Pictures/Screenshots"
 user.icon_theme = home .. ".icons/Pixelitos" -- https://github.com/ItzSelenux/pixelitos-icon-theme
 user.border = dpi(1)
