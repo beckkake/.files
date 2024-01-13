@@ -1,12 +1,12 @@
 #define BG #282828
-#define FG #eeeeee
-#define BL #a3a3a3
+#define FG #EEEEEE
+#define BL #A3A3A3
 #define WH #444444
-#define R #ed333b
-#define G #e66100
-#define Y #ffa348
-#define B #5bc8af
-#define M #1c71d8
+#define R #ED333B
+#define G #E66100
+#define Y #FFA348
+#define B #5BC8AF
+#define M #1C71D8
 #define C #E05C91
 
 st.font: CozetteHiDpi:pixelsize=23
@@ -18,33 +18,33 @@ st.borderpx: 45
 *.cursorColor:  FG
 
 ! black
-*.color0:       BL
-*.color8:       BL
+*.color0:       #171421
+*.color8:       #5E5C64
 
 ! red
-*.color1:       R
-*.color9:       R
+*.color1:       #C01C28
+*.color9:       #F66151
 
 ! green
-*.color2:       G
-*.color10:      G
+*.color2:       #26A269
+*.color10:      #33D17A
 
 ! yellow
-*.color3:       Y
-*.color11:      Y
+*.color3:       #A2734C
+*.color11:      #E9AD0C
 
 ! blue
-*.color4:       B
-*.color12:      B
+*.color4:       #12488B
+*.color12:      #2A7BDE
 
 ! magenta
-*.color5:       M
-*.color13:      M
+*.color5:       #A347BA
+*.color13:      #C061CB
 
 ! cyan
-*.color6:       C
-*.color14:      C
+*.color6:       #2AA1B3
+*.color14:      #33C7DE
 
 ! white
-*.color7:       WH
-*.color15:      WH
+*.color7:       #D0CFCC
+*.color15:      #FFFFFF

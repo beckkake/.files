@@ -90,6 +90,34 @@ local spacer = {
     }
 }
 
+-- greeting stuff
+local function get_greeting()
+    local current_hour = tonumber(os.date("%H"))
+
+    if current_hour >= 5 and current_hour < 12 then
+        return "Good morning"
+    elseif current_hour >= 12 and current_hour < 18 then
+        return "Good afternoon"
+    else
+        return "Good evening"
+    end
+end
+
+local function show_greeting()
+    local greeting = get_greeting()
+    wibox.widget({
+        widget = wibox.widget.textbox,
+        text = greeting .. ", " .. user.name .. "!"
+    })
+end
+
+-- it gotta be updated
+gears.timer {
+    timeout = 60,
+    autostart = true,
+    callback = function() show_greeting() end
+}
+
 -- do this for some reason 
 screen.connect_signal("request::desktop_decoration", function(s)
 
@@ -104,8 +132,8 @@ screen.connect_signal("request::desktop_decoration", function(s)
                             {
                                 -- icons
                                 {
-                                    icons.arrow,
-                                    icons.arrowRight,
+                                    widget = wibox.container.background,
+                                    bg = beautiful.bg_normal,
                                     layout = wibox.layout.fixed.horizontal,
                                     spacing = 0
                                 },
@@ -119,7 +147,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
                             widget = wibox.container.background
                         },
                         widget = wibox.container.margin,
-                        margins = {bottom = dpi(8)}
+                        margins = {bottom = dpi(9)}
                     },
                     spacer,
                     layout = wibox.layout.fixed.vertical
@@ -131,8 +159,11 @@ screen.connect_signal("request::desktop_decoration", function(s)
                         {
 
                             {
-                                wibox.widget.textbox("Good morning, " ..
-                                                         user.name .. "!"),
+                                {
+                                    widget = wibox.widget.textbox,
+                                    text = get_greeting() .. ", " .. user.name ..
+                                        "!"
+                                },
                                 widget = wibox.container.margin,
                                 margins = {top = dpi(-24), right = dpi(12)}
                             },
@@ -140,7 +171,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
                                 {
                                     {
                                         widget = wibox.widget.imagebox,
-                                        image = "/home/beck/Pictures/Profile Pictures/blue girl.gif",
+                                        image = user.avatar,
                                         forced_width = 100,
                                         forced_height = 100
                                     },
@@ -200,13 +231,14 @@ screen.connect_signal("request::desktop_decoration", function(s)
                         bg = beautiful.bg_dark
                     },
                     widget = wibox.container.margin,
-                    margins = {top = dpi(-8)}
+                    margins = {top = dpi(-10)}
                 },
 
                 layout = wibox.layout.fixed.vertical
             },
-            minimum_width = 400,
+            minimum_width = 450,
             minimum_height = 50,
+            maximum_width = 500,
             bg = beautiful.bg_normal,
             visible = false,
             border_width = user.border,
@@ -223,4 +255,3 @@ screen.connect_signal("request::desktop_decoration", function(s)
 end)
 
 click_to_hide.popup(controlCenterPopup, nil, true)
-

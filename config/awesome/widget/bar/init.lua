@@ -14,12 +14,13 @@ require("widget.bar.components.mysystray")
 
 screen.connect_signal("request::desktop_decoration", function(s)
     -- Each screen has its own tag table.
-    awful.tag({"1", "2", "3", "4", "5", "6", "7", "8", "9"}, s,
-              awful.layout.layouts[1])
+    awful.tag(
+        {"Workspace 1", " Workspace 2", " ", " ", " ", " ", " ", " ", " "}, s,
+        awful.layout.layouts[1])
 
     -- Create the wibox
     s.mywibox = wibox {
-        ontop = true,
+        ontop = false,
         screen = s,
         stretch = false,
         y = "-" .. user.border,
@@ -45,10 +46,19 @@ screen.connect_signal("request::desktop_decoration", function(s)
             layout = wibox.layout.fixed.horizontal,
             spacing = 8,
             mysearchbox,
-            mytagbox,
-            toggleButton
+            mytagbox
+
         },
-        {nil, widget = wibox.container.place, halign = "center"}, -- Middle widget
+        {
+            {
+
+                widget = wibox.widget.textbox,
+                markup = "<i>" .. awful.tag.selected(1).name .. "</i>"
+
+            },
+            widget = wibox.container.place,
+            halign = "center"
+        }, -- Middle widget
         {
             layout = wibox.layout.fixed.horizontal,
             spacing = 8,

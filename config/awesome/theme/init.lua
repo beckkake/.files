@@ -27,7 +27,7 @@ theme.blue = color.blue
 theme.purple = color.purple
 theme.magenta = color.magenta
 
-theme.accent = "#8D6C05"
+theme.accent = "#D7888B"
 
 theme.bg_dark = color.bg_dark
 theme.bg_dim = color.bg_dim
@@ -40,19 +40,16 @@ theme.fg_normal = color.fg_normal
 
 theme.transparent = "#00000000"
 
--- generate taglist squares
-local taglist_square_size = dpi(4)
+-- taglist
+local taglist_square_size = dpi(8)
 theme.taglist_squares_sel = theme_assets.taglist_squares_sel(
                                 taglist_square_size, theme.fg_normal)
 theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
                                   taglist_square_size, theme.fg_normal)
-
--- taglist
-theme.taglist_font = theme.font
-theme.taglist_bg_focus = color.bg_normal
-theme.taglist_bg_occupied = color.bg_normal
-theme.taglist_bg_empty = color.bg_normal
-theme.taglist_bg_urgent = theme.accent
+theme.taglist_shape = gears.shape.rectangle
+theme.taglist_shape_border_width = dpi(1)
+theme.taglist_shape_border_color = color.fg_normal
+theme.taglist_bg_focus = color.fg_normal
 
 -- tasklist
 theme.tasklist_bg_focus = color.bg_normal

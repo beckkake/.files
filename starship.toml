@@ -1,7 +1,7 @@
 format = """
 $username\
 $hostname\
-$directory\
+$character\
 $git_branch\
 $git_status\
 $git_state\
@@ -10,14 +10,13 @@ $line_break\
 $python"""
 
 [directory]
-style = "fg:#282828 bg:#8D6C05"
-home_symbol = "Home"
+style = "fg:#282828 bg:#229FF7"
+home_symbol = "☺"
 format = " [ $path ]($style) "
 
 [character]
-success_symbol = "[>](purple)"
-error_symbol = "[>](red)"
-vimcmd_symbol = "[<](green)"
+success_symbol = "[ ☺ ](fg:#282828 bg:#D7888B)"
+error_symbol = "[ ☹ ](fg:#282828 bg:#C01C28)"
 
 [git_branch]
 format = "[$branch]($style)"
@@ -40,7 +39,7 @@ style = "bright-black"
 
 [cmd_duration]
 format = "[$duration]($style) "
-style = "fg:#8D6C05 bg:#282828"
+style = "fg:#D7888B bg:#282828"
 
 [python]
 format = "[$virtualenv]($style) "

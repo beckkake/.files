@@ -24,8 +24,26 @@ awful.screen.connect_for_each_screen(function(s)
     mytaglist = awful.widget.taglist {
         screen = s,
         filter = awful.widget.taglist.filter.all,
+        base_layout = wibox.widget {
+            spacing = -1,
+            forced_num_cols = 3,
+            layout = wibox.layout.grid.vertical
+        },
+        widget_template = {
+            {
 
-        layout = {spacing = 8, layout = wibox.layout.fixed.horizontal},
+                {
+                    id = "index_role",
+                    forced_height = 24,
+                    forced_width = 24,
+                    widget = wibox.widget.textbox
+                },
+
+                id = "background_role",
+                widget = wibox.container.background
+            },
+            layout = wibox.layout.fixed.horizontal
+        },
         buttons = taglist_buttons
     }
 end)
@@ -33,10 +51,10 @@ end)
 local popup = awful.popup {
     widget = {
         layout = wibox.layout.align.vertical,
-        spacing = 8,
+        spacing = -1,
         {
             {
-                {widget = wibox.widget.textbox, text = "Pick a tag:"},
+                mytaglist,
                 widget = wibox.container.place,
                 halign = "center",
                 valign = "center"
@@ -44,22 +62,6 @@ local popup = awful.popup {
             widget = wibox.container.margin,
             margins = {
                 top = dpi(10),
-                bottom = dpi(10),
-                left = dpi(10),
-                right = dpi(10)
-            }
-        },
-        {
-            {
-                mytaglist,
-                widget = wibox.container.place,
-                halign = "center",
-                valign = "center"
-
-            },
-            widget = wibox.container.margin,
-            margins = {
-                top = dpi(0),
                 bottom = dpi(10),
                 left = dpi(10),
                 right = dpi(10)
@@ -119,4 +121,3 @@ end)))
 click_to_hide.popup(popup, nil, true)
 
 helpers.hoverCursor(mytagbox)
-

@@ -55,7 +55,7 @@ awful.keyboard.append_global_keybindings({
         for s in screen do s.mywibox.visible = not s.mywibox.visible end
     end, {description = "toggle wibox", group = "awesome"}), -- extras 
     awful.key({modkey, "Shift"}, "t", function()
-        naughty.notification({title = "Notification", text = "Hi, Reddit!"})
+        naughty.notification({title = "Notification", text = "Hi!"})
     end, {description = "send a test notification", group = "awesome"}),
     awful.key({modkey, "Shift"}, "g", function()
         awful.spawn.easy_async("gpick -s -o", function(out)
