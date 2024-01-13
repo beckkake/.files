@@ -20,6 +20,3 @@ beautiful.init(gears.filesystem.get_configuration_dir() .. "theme/init.lua")
 require("base")
 require("signals")
 require("widget")
-
---[[local workspace_grid = require("modules.awesome-workspace-grid")
-grid = workspace_grid({position = "bottom_right", rows = 3, columns = 3})]]
