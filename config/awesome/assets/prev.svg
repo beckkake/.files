@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="767"
+   height="1024"
+   viewBox="0 0 767 1024"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter2"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feComposite
+         in2="SourceGraphic"
+         operator="arithmetic"
+         k1="0"
+         k2="1"
+         result="composite1"
+         id="feComposite1"
+         k3="0"
+         k4="0" />
+      <feColorMatrix
+         in="composite1"
+         values="1"
+         type="saturate"
+         result="colormatrix1"
+         id="feColorMatrix1" />
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(238,238,238)"
+         result="flood1"
+         id="feFlood1" />
+      <feBlend
+         in="flood1"
+         in2="colormatrix1"
+         mode="normal"
+         result="blend1"
+         id="feBlend1" />
+      <feBlend
+         in2="blend1"
+         mode="normal"
+         result="blend2"
+         id="feBlend2" />
+      <feColorMatrix
+         in="blend2"
+         values="1"
+         type="saturate"
+         result="colormatrix2"
+         id="feColorMatrix2" />
+      <feComposite
+         in="colormatrix2"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite2"
+         id="feComposite2" />
+    </filter>
+  </defs>
+  <g
+     id="g1">
+    <image
+       width="767"
+       height="1024"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,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&#10;"
+       id="image1"
+       style="filter:url(#filter2)" />
+  </g>
+</svg>

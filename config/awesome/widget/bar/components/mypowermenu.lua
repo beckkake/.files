@@ -6,7 +6,7 @@ local gfs = require("gears.filesystem")
 local beautiful = require("beautiful")
 
 local dpi = beautiful.xresources.apply_dpi
-local icons = require("widget.controlCenter.icons")
+local icons = require("widget.controlcenter.components.myicons")
 
 -- initiliaze direct elements
 local click_to_hide = require("base.helpers.click_to_hide")

@@ -7,6 +7,7 @@ local dpi = beautiful.xresources.apply_dpi
 local naughty = require("naughty")
 local user = require("user")
 local helpers = require("base.helpers.extras")
+local click_to_hide = require("base.helpers.click_to_hide")
 
 local blankbox = wibox.widget.textbox("    ")
 blankbox.forced_height = dpi(60)
@@ -156,7 +157,7 @@ window:setup({
 
 })
 
-local toggleButton = wibox.widget {
+mycolorpicker = wibox.widget {
     {
         {
             {
@@ -184,7 +185,7 @@ local toggleButton = wibox.widget {
     margins = {top = dpi(10), bottom = dpi(10), left = dpi(8), right = dpi(0)}
 }
 
-toggleButton:connect_signal("button::release", function(_, _, _, button)
+mycolorpicker:connect_signal("button::release", function(_, _, _, button)
     if button == 1 then
         window.visible = not window.visible
     elseif button == 3 then
@@ -252,6 +253,7 @@ awesome.connect_signal("clear::colors", function()
     empty_box.visible = true
 end)
 
-helpers.hoverCursor(toggleButton)
+helpers.hoverCursor(mycolorpicker)
+click_to_hide.popup(window, nil, true)
 
 return toggleButton

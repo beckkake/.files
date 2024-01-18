@@ -115,7 +115,7 @@ client.connect_signal("request::titlebars", function(c)
 
                         {
                             widget = wibox.widget.imagebox,
-                            image = beautiful.previous
+                            image = beautiful.arrowLeft
                         },
                         widget = wibox.container.margin,
                         margins = {
@@ -146,7 +146,10 @@ client.connect_signal("request::titlebars", function(c)
             {
                 {
                     {
-                        {widget = wibox.widget.imagebox, image = beautiful.next},
+                        {
+                            widget = wibox.widget.imagebox,
+                            image = beautiful.arrowRight
+                        },
                         widget = wibox.container.margin,
                         margins = {
                             top = dpi(5),
@@ -166,9 +169,8 @@ client.connect_signal("request::titlebars", function(c)
                     left = dpi(0),
                     right = dpi(12)
                 },
-                buttons = awful.button({}, 1,
-                                       function(c)
-                    move_to_previous_tag()
+                buttons = awful.button({}, 1, function(c)
+                    move_to_next_tag()
                 end)
             }
             --[[{
@@ -227,36 +229,6 @@ client.connect_signal("request::titlebars", function(c)
         },
         {
 
-            {
-                {
-                    {
-
-                        {
-                            awful.titlebar.widget.minimizebutton(c),
-                            halign = "right",
-                            valign = "center",
-                            layout = wibox.layout.fixed.horizontal()
-                        },
-                        widget = wibox.container.margin,
-                        margins = {
-                            top = dpi(5),
-                            bottom = dpi(5),
-                            left = dpi(5),
-                            right = dpi(5)
-                        }
-                    },
-                    widget = wibox.container.background,
-                    shape_border_width = user.border,
-                    shape_border_color = beautiful.fg_normal
-                },
-                widget = wibox.container.margin,
-                margins = {
-                    top = dpi(10),
-                    bottom = dpi(10),
-                    left = dpi(0),
-                    right = dpi(0)
-                }
-            },
             layout = wibox.layout.fixed.horizontal(),
             spacing = 8,
             {

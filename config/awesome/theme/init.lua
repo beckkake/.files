@@ -7,7 +7,7 @@ local wibox = require("wibox")
 local gears = require("gears")
 local gfs = require("gears.filesystem")
 local themes_path = gfs.get_themes_dir()
-local config_path = gfs.get_configuration_dir()
+local assets_path = gfs.get_configuration_dir() .. "assets/"
 local icon_path = os.getenv("HOME") .. "/.icons/Pixelitos/128/apps/"
 
 local user = require("user")
@@ -27,7 +27,7 @@ theme.blue = color.blue
 theme.purple = color.purple
 theme.magenta = color.magenta
 
-theme.accent = "#D7888B"
+theme.accent = "#D3E58F"
 
 theme.bg_dark = color.bg_dark
 theme.bg_dim = color.bg_dim
@@ -89,41 +89,45 @@ theme.snap_border_width = user.border
 theme.snap_bg = color.fg_normal
 theme.snap_shape = gears.shape.rectangle
 
--- (awesome) icons
-theme.titlebar_close_button_normal = config_path .. "assets/close.svg"
-theme.titlebar_close_button_focus = config_path .. "assets/close.svg"
+-- titlebar 
+theme.titlebar_close_button_normal = assets_path .. "close.svg"
+theme.titlebar_close_button_focus = assets_path .. "close.svg"
+theme.titlebar_minimize_button_normal = assets_path .. "minus.svg"
+theme.titlebar_minimize_button_focus = assets_path .. "minus.svg"
+theme.titlebar_maximized_button_normal_inactive = assets_path .. "plus.svg"
+theme.titlebar_maximized_button_focus_inactive = assets_path .. "plus.svg"
+theme.titlebar_maximized_button_normal_active = assets_path .. "plus.svg"
+theme.titlebar_maximized_button_focus_active = assets_path .. "plus.svg"
 
-theme.titlebar_minimize_button_normal = config_path .. "assets/minus.svg"
-theme.titlebar_minimize_button_focus = config_path .. "assets/minus.svg"
+-- layouts 
+theme.layout_tile = assets_path .. "tile.svg"
+theme.layout_floating = assets_path .. "floating.svg"
 
-theme.titlebar_maximized_button_normal_inactive = config_path ..
-                                                      "assets/plus.svg"
-theme.titlebar_maximized_button_focus_inactive = config_path ..
-                                                     "assets/plus.svg"
-theme.titlebar_maximized_button_normal_active = config_path .. "assets/plus.svg"
-theme.titlebar_maximized_button_focus_active = config_path .. "assets/plus.svg"
-
-theme.layout_tile = config_path .. "assets/tile.svg"
-theme.layout_floating = config_path .. "assets/floating.svg"
 -- custom icons
-theme.arrow = config_path .. "assets/arrow.svg"
-theme.arrowRight = config_path .. "assets/arrowRight.svg"
-theme.previous = config_path .. "assets/previous.svg"
-theme.next = config_path .. "assets/next.svg"
-theme.home = config_path .. "assets/home.svg"
-theme.tag = config_path .. "assets/tag.svg"
-theme.logout = config_path .. "assets/logout.svg"
-theme.search = config_path .. "assets/search.svg"
-theme.resize = config_path .. "assets/resize.svg"
-theme.move = config_path .. "assets/move.svg"
-theme.notifications = config_path .. "assets/notification.svg"
-theme.main = config_path .. "assets/main.svg"
-theme.settings = config_path .. "assets/settings.svg"
-theme.volume = config_path .. "assets/volume.svg"
-theme.brightness = config_path .. "assets/brightness.svg"
-theme.charging = config_path .. "assets/charging.svg"
-theme.trash = config_path .. "assets/trash.svg"
-theme.fill = config_path .. "assets/fill.svg"
+theme.left = assets_path .. "left.svg"
+theme.right = assets_path .. "right.svg"
+theme.arrowLeft = assets_path .. "arrowLeft.svg"
+theme.arrowRight = assets_path .. "arrowRight.svg"
+theme.music = assets_path .. "music.svg"
+theme.pause = assets_path .. "pause.svg"
+theme.play = assets_path .. "play.svg"
+theme.prev = assets_path .. "prev.svg"
+theme.next = assets_path .. "next.svg"
+theme.placeholder = theme.music
+theme.home = assets_path .. "home.svg"
+theme.tag = assets_path .. "tag.svg"
+theme.logout = assets_path .. "logout.svg"
+theme.search = assets_path .. "search.svg"
+theme.resize = assets_path .. "resize.svg"
+theme.move = assets_path .. "move.svg"
+theme.notifications = assets_path .. "notification.svg"
+theme.main = assets_path .. "main.svg"
+theme.settings = assets_path .. "settings.svg"
+theme.volume = assets_path .. "volume.svg"
+theme.brightness = assets_path .. "brightness.svg"
+theme.charging = assets_path .. "charging.svg"
+theme.trash = assets_path .. "trash.svg"
+theme.fill = assets_path .. "fill.svg"
 
 theme.wallpaper = user.wallpaper
 

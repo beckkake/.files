@@ -19,7 +19,7 @@ systray = wibox.widget {
 systrayButton = wibox.widget {
     {
         {
-            {image = beautiful.arrow, widget = wibox.widget.imagebox},
+            {image = beautiful.left, widget = wibox.widget.imagebox},
             widget = wibox.container.margin,
             margins = {
                 top = dpi(8),
