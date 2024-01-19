@@ -4,7 +4,6 @@ local gears = require("gears")
 local beautiful = require("beautiful")
 local dpi = beautiful.xresources.apply_dpi
 local user = require("user")
-local helpers = require("helpers")
 
 require("widget.bar.components.mysearchbox")
 require("widget.bar.components.mycontrolcenter")
@@ -13,19 +12,11 @@ require("widget.bar.components.mytasklist")
 require("widget.bar.components.mytextclock")
 require("widget.bar.components.mysystray")
 
---[[local tag_title_widget = wibox.widget {widget = wibox.widget.textbox}
-
-tag.connect_signal("property::selected", function()
-    local t = awful.screen.focused().selected_tag
-    if not t then return end
-    tag_title_widget.markup = t.index
-end)]]
-
 screen.connect_signal("request::desktop_decoration", function(s)
     awful.tag({"1", "2", "3", "4", "5", "6", "7", "8", "9"}, s,
               awful.layout.layouts[1])
 
-    -- Create the wibox
+    -- create the wibox
     s.mywibox = wibox {
         ontop = false,
         screen = s,

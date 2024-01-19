@@ -3,7 +3,6 @@ local wibox = require("wibox")
 local beautiful = require("beautiful")
 local dpi = beautiful.xresources.apply_dpi
 local user = require("user")
-local helpers = require("base.helpers.extras")
 
 systray = wibox.widget {
     {
@@ -16,7 +15,7 @@ systray = wibox.widget {
     visible = false
 }
 
-systrayButton = wibox.widget {
+systrayButton = hovercursor(wibox.widget {
     {
         {
             {image = beautiful.left, widget = wibox.widget.imagebox},
@@ -40,7 +39,5 @@ systrayButton = wibox.widget {
             systray.visible = not systray.visible
         end)
     }
+})
 
-}
-
-helpers.hoverCursor(systrayButton)

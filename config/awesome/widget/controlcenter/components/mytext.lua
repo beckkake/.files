@@ -3,7 +3,6 @@ local awful = require("awful")
 local wibox = require("wibox")
 local beautiful = require("beautiful")
 local dpi = beautiful.xresources.apply_dpi
-local helpers = require("helpers")
 
 -- initialize direct elements
 local user = require("user")
@@ -40,14 +39,14 @@ headertext = wibox.widget {
         {
             {widget = wibox.widget.textbox, text = get_greeting()},
             widget = wibox.container.place,
-            halign = "right",
+            halign = "left",
             valign = "center"
         },
         widget = wibox.container.margin,
         margins = {
-            top = dpi(16),
+            top = dpi(0),
             bottom = dpi(0),
-            left = dpi(6),
+            left = dpi(12),
             right = dpi(0)
         }
     },
@@ -59,14 +58,17 @@ headertext = wibox.widget {
                 fg = beautiful.mid_light
             },
             widget = wibox.container.place,
-            halign = "right",
+            halign = "left",
             valign = "center"
         },
         widget = wibox.container.margin,
-        margins = {top = dpi(0), bottom = dpi(0), left = dpi(6), right = dpi(0)}
-
+        margins = {
+            top = dpi(0),
+            bottom = dpi(0),
+            left = dpi(12),
+            right = dpi(0)
+        }
     },
-
     layout = wibox.layout.fixed.vertical
 }
 

@@ -5,7 +5,6 @@ local beautiful = require("beautiful")
 local dpi = beautiful.xresources.apply_dpi
 local user = require("user")
 
-local helpers = require("base.helpers.extras")
 local click_to_hide = require("base.helpers.click_to_hide")
 
 local taglist_buttons = gears.table.join(
@@ -83,7 +82,7 @@ local popup = awful.popup {
 }
 
 -- creating the taglist widget
-mytagbox = wibox.widget {
+mytagbox = hovercursor(wibox.widget {
     {
 
         {
@@ -108,7 +107,7 @@ mytagbox = wibox.widget {
     },
     widget = wibox.container.margin,
     margins = {top = dpi(10), bottom = dpi(10), left = dpi(0), right = dpi(0)}
-}
+})
 
 mytagbox:buttons(awful.util.table.join(awful.button({}, 1, function()
     if popup.visible then
@@ -120,4 +119,3 @@ end)))
 
 click_to_hide.popup(popup, nil, true)
 
-helpers.hoverCursor(mytagbox)

@@ -5,7 +5,6 @@ local beautiful = require("beautiful")
 local dpi = beautiful.xresources.apply_dpi
 
 local user = require("user")
-local helpers = require("base.helpers.extras")
 
 -- create the layoutbox
 awful.screen.connect_for_each_screen(function(s)
@@ -25,7 +24,7 @@ end)
 
 -- create the layoutbox icon
 awful.screen.connect_for_each_screen(function(s)
-    mylayouts = wibox.widget {
+    mylayouts = hovercursor(wibox.widget {
         {
 
             {
@@ -42,7 +41,7 @@ awful.screen.connect_for_each_screen(function(s)
             },
             widget = wibox.container.background,
             id = "bg",
-            bg = beautiful.bg_normal,
+            bg = beautiful.bg_dark,
             shape_border_width = user.border,
             shape_border_color = beautiful.fg_normal
         },
@@ -53,7 +52,6 @@ awful.screen.connect_for_each_screen(function(s)
             left = dpi(8),
             right = dpi(0)
         }
-    }
+    })
 end)
 
-helpers.hoverCursor(mylayouts)

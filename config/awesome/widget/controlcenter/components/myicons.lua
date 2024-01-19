@@ -1,14 +1,14 @@
+local awful = require("awful")
 local wibox = require("wibox")
 local beautiful = require("beautiful")
 local dpi = beautiful.xresources.apply_dpi
 local user = require("user")
-local helpers = require("base.helpers.extras")
 
 local icons = {}
 
 -- make a widget template
 function iconWidget(image, margin, left, right, left2, right2)
-    return wibox.widget {
+    return hovercursor(wibox.widget {
         {
             {
                 {
@@ -46,50 +46,42 @@ function iconWidget(image, margin, left, right, left2, right2)
             left = left2,
             right = right2
         }
-    }
+    })
 end
-
--- make a hover template
---[[function hoverColors(widget, hoverBg, hoverBorder, normalBg, normalBorder)
-    local oldbg, oldwidget
-    widget:connect_signal("mouse::enter", function()
-        local wb = widget
-        if wb == nil then return end
-        oldbg, oldwidget = wb.bg.bg, wb
-        wb.bg.bg = beautiful.bg_normal
-        widget.bg.bg = hoverBg
-        widget.bg.shape_border_color = hoverBorder
-    end)
-    widget:connect_signal("mouse::leave", function()
-        if oldwidget then
-            oldwidget.bg.bg = oldbg
-            oldwidget = nil
-            widget.bg.bg = normalBg
-            widget.bg.shape_border_color = normalBorder
-        end
-    end)
-end
-
-function hoverImage(widget, hoverIcon, normalIcon)
-    widget:connect_signal("mouse::enter", function()
-        widget:get_children_by_id("icon")[1].image = hoverIcon
-    end)
-    widget:connect_signal("mouse::leave", function()
-        widget:get_children_by_id("icon")[1].image = normalIcon
-    end)
-end]]
 
 -- initialize icons
 icons.main = iconWidget(beautiful.main, dpi(5), dpi(5), dpi(5), dpi(8), dpi(0))
-helpers.hoverCursor(icons.main)
+icons.main:buttons{
+    awful.button({}, 1, function()
+        if controlcenter.visible then
+            controlcenter.visible = true
+            settings.visible = false
+            notificationcenter.visible = false
+        else
+            controlcenter.visible = true
+            settings.visible = false
+            notificationcenter.visible = false
+        end
+    end)
+}
 
 icons.settings = iconWidget(beautiful.settings, dpi(5), dpi(5), dpi(5), dpi(8),
                             dpi(0))
-helpers.hoverCursor(icons.settings)
+icons.settings:buttons{
+    awful.button({}, 1, function()
+        if controlcenter.visible then
+            settings.visible = true
+            notificationcenter.visible = false
+            controlcenter.visible = false
+        end
+    end)
+}
+
+icons.music =
+    iconWidget(beautiful.music, dpi(5), dpi(5), dpi(5), dpi(8), dpi(0))
 
 icons.logout = iconWidget(beautiful.logout, dpi(5), dpi(5), dpi(5), dpi(8),
                           dpi(0))
-helpers.hoverCursor(icons.logout)
 
 icons.arrow = iconWidget(beautiful.previous, dpi(5), dpi(5), dpi(5), dpi(0),
                          dpi(8))
@@ -98,6 +90,14 @@ icons.arrowRight = iconWidget(beautiful.next, dpi(5), dpi(5), dpi(5), dpi(0),
 
 icons.notifications = iconWidget(beautiful.notifications, dpi(5), dpi(7),
                                  dpi(5), dpi(8), dpi(0))
-helpers.hoverCursor(icons.notifications)
+icons.notifications:buttons{
+    awful.button({}, 1, function()
+        if controlcenter.visible then
+            notificationcenter.visible = true
+            settings.visible = false
+            controlcenter.visible = false
+        end
+    end)
+}
 
 return icons

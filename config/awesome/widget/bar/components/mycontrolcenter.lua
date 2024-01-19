@@ -7,12 +7,11 @@ local gears = require("gears")
 local user = require("user")
 
 -- initiliaze direct elements
-local helpers = require("base.helpers.extras")
 local click_to_hide = require("base.helpers.click_to_hide")
 require("widget.controlcenter")
 
 -- create the actual widget
-mycontrolcenter = wibox.widget {
+mycontrolcenter = hovercursor(wibox.widget {
     {
         {
             {image = beautiful.home, widget = wibox.widget.imagebox},
@@ -30,7 +29,5 @@ mycontrolcenter = wibox.widget {
             controlcenter.visible = not controlcenter.visible
         end)
     }
-}
-
-helpers.hoverCursor(mycontrolcenter)
+})
 

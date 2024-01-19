@@ -19,8 +19,8 @@ mytextclock = wibox.widget {
             widget = wibox.container.margin, -- the center was off for some reason
             margins = {
                 top = dpi(0),
-                bottom = dpi(-2),
-                left = dpi(-2),
+                bottom = dpi(0),
+                left = dpi(0),
                 right = dpi(0)
             }
         },

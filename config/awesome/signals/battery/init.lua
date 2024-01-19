@@ -71,4 +71,4 @@ end
 
 awful.widget.watch(
     "bash -c 'sleep 1 && upower -i /org/freedesktop/UPower/devices/battery_BAT0'",
-    30, function(widget, stdout) checkBatteryStatus() end)
+    60, function(widget, stdout) checkBatteryStatus() end)

@@ -4,12 +4,11 @@ local beautiful = require("beautiful")
 local dpi = beautiful.xresources.apply_dpi
 local gears = require("gears")
 local user = require("user")
-local helpers = require("base.helpers.extras")
 
 local launcher = require("widget.launcher")
 local bling = require("modules.bling")
 
-mysearchbox = wibox.widget {
+mysearchbox = hovercursor(wibox.widget {
     {
         {
             {image = beautiful.search, widget = wibox.widget.imagebox},
@@ -33,7 +32,5 @@ mysearchbox = wibox.widget {
             app_launcher:toggle()
         end)
     }
-}
-
-helpers.hoverCursor(mysearchbox)
+})
 

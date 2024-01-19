@@ -27,7 +27,7 @@ theme.blue = color.blue
 theme.purple = color.purple
 theme.magenta = color.magenta
 
-theme.accent = "#D3E58F"
+theme.accent = "#DD1472"
 
 theme.bg_dark = color.bg_dark
 theme.bg_dim = color.bg_dim
@@ -88,6 +88,7 @@ theme.border_color_marked = color.fg_normal
 theme.snap_border_width = user.border
 theme.snap_bg = color.fg_normal
 theme.snap_shape = gears.shape.rectangle
+theme.playerctl_position_update_interval = 1
 
 -- titlebar 
 theme.titlebar_close_button_normal = assets_path .. "close.svg"

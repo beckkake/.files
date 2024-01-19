@@ -18,5 +18,3 @@ awful.keyboard.append_global_keybindings({
               {description = "focus the previous screen", group = "screen"})
 })
 
--- Insert after 'globalkeys' is defined but before it is passed to 'root':
-

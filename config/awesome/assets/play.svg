@@ -4,9 +4,9 @@
 <svg
    version="1.1"
    id="svg1"
-   width="512"
+   width="897"
    height="1024"
-   viewBox="0 0 512 1024"
+   viewBox="0 0 897 1024"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
@@ -65,7 +65,8 @@
     </filter>
   </defs>
   <g
-     id="g1">
+     id="g1"
+     transform="translate(210,-1.3433454)">
     <image
        width="512"
        height="1024"

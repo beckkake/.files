@@ -1,37 +1,34 @@
+local awful = require("awful")
+local gears = require("gears")
 local helpers = {}
-function helpers.hoverCursor(w, cursorType)
-    cursorType = cursorType or 'hand2'
-    local oldCursor = 'left_ptr'
-    local wbx
 
-    w.hcDisabled = false
-    local enterCb = function()
-        wbx = mouse.current_wibox
-        if wbx then wbx.cursor = cursorType end
-    end
-    local leaveCb = function() if wbx then wbx.cursor = oldCursor end end
-
-    w:connect_signal('hover::disconnect', function()
-        w:disconnect_signal('mouse::enter', enterCb)
-        w:disconnect_signal('mouse::leave', leaveCb)
-        leaveCb()
+function hovercursor(widget)
+    local oldcursor, oldwibox
+    widget:connect_signal("mouse::enter", function()
+        local wb = mouse.current_wibox
+        if wb == nil then return end
+        oldcursor, oldwibox = wb.cursor, wb
+        wb.cursor = "hand2"
     end)
-
-    function w:toggleHoverCursor()
-        w.hcDisabled = not w.hcDisabled
-        if w.hcDisabled then
-            leaveCb()
-        else
-            enterCb()
+    widget:connect_signal("mouse::leave", function()
+        if oldwibox then
+            oldwibox.cursor = oldcursor
+            oldwibox = nil
         end
-    end
-
-    w:connect_signal('mouse::enter', enterCb)
-    w:connect_signal('mouse::leave', leaveCb)
+    end)
+    return widget
 end
 
 -- i forgot what this does
 helpers.inTable = function(t, v)
     for _, value in ipairs(t) do if value == v then return true end end
 end
+
+-- colorize text
+helpers.colorizeText = function(txt, fg)
+    if fg == "" then fg = "#ffffff" end
+
+    return "<span foreground='" .. fg .. "'>" .. txt .. "</span>"
+end
+
 return helpers

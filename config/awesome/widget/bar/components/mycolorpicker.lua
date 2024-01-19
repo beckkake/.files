@@ -157,7 +157,7 @@ window:setup({
 
 })
 
-mycolorpicker = wibox.widget {
+mycolorpicker = hovercursor(wibox.widget {
     {
         {
             {
@@ -183,7 +183,7 @@ mycolorpicker = wibox.widget {
     },
     widget = wibox.container.margin,
     margins = {top = dpi(10), bottom = dpi(10), left = dpi(8), right = dpi(0)}
-}
+})
 
 mycolorpicker:connect_signal("button::release", function(_, _, _, button)
     if button == 1 then
@@ -253,7 +253,6 @@ awesome.connect_signal("clear::colors", function()
     empty_box.visible = true
 end)
 
-helpers.hoverCursor(mycolorpicker)
 click_to_hide.popup(window, nil, true)
 
 return toggleButton
