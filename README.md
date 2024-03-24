@@ -8,7 +8,7 @@ Pix is an ever-changing environment that strives to stay true to an entirely pix
 
 ---
 
-<h3><a href="https://github.com/beckkake/.files/tree/meowsomeWM">MeowsomeWM</a></h3>
+<h3><a href="https://github.com/beckkake/.files/tree/meowsomewm">MeowsomeWM</a></h3>
 
 A cat lover's dream, MeowsomeWM is a configuration that serves to be both cute and functional, its fluid theme and uniqueness making it stand out in any crowd.
 
