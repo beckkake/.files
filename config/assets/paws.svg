@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 114" width="46" height="114">
+	<title>paws-svg</title>
+	<defs>
+		<image  width="46" height="114" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAByCAMAAAAbKxOJAAAAAXNSR0IB2cksfwAAAFdQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADpeTbQAAAB10Uk5TAD9ff5+//0+P3yDvrxDPUGBwsEDQgPDgMG+QwKCIQNBUAAABQUlEQVR4nO3Y2xaCIBAFUMo0oyit7KL9/3cmmBeghjlr9ZAreN4kKAychPDaYrFMkmSVdi2zmkPX+Saj2tTKfEtai8tdyE55wsADV2mYjlzteTrDdMc5kxz5ga0Np7+Mywu+1pw9T8MloFteYvyIceC9tFwhOhOn/+EC5GeMIwtSr0jk5/VOBbzZq9UF4kJxO/RFTJVXhOuCwFj5VrmWVegR7lkQeIR/eEiqg89FFfkcOHX2vOFUKYk88shny6ljP/LIv8CpO7evT9SF3sVyRWCX32hscXkPR6LB5qz49BoEM652nJeEex6an82RWNZ+xGDatzh1H3nDsRAH5c8fi1mzDnE1xoF/OMyKZAWmkSNrTJchduLrdhOwP8xebTDOT6wC833VZY5nKHm81zkpkQ+Itx3K4JC8w6Co6qZpPk39CarRZbv40WyxAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<g id="Layer">
+		<use id="Layer" href="#img1" x="0" y="0"/>
+	</g>
+</svg>

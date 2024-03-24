@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 46" width="62" height="46">
+	<title>pawsLeft-svg</title>
+	<defs>
+		<image  width="114" height="46" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHIAAAAuCAMAAADDT73DAAAAAXNSR0IB2cksfwAAADNQTFRFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAowVGyQAAABF0Uk5T/9DAoIBgQLAAEOCQIFDwMHAH2IzDAAABG0lEQVR4nO2WbQ+DIAyECyIWRcf//7UTnW+RloAJ2TLuo176eM1BBKiqqqqqqnokUR4pK7IifwrZlEeqP0CK8kgJbXmk/kZkh7S01ubywPSxcQNgFGkZZOAjYuMUYOyzuJAhxQ76CDjELIlIE5mnAUfe0ScSozERECfWoZKRL3ae9Eh+s2nlWcT+2ziPtJwjtTxejo8wI7FjHKnl8eIyNLggGUt6ebyYzdoVifTV7rKQdDt8GRckUr8Gk+FnEyLXJnFHGmIV6ScEuQjCHEiCmRmSOporcUOiCdU2N2S4HfITAHbXeLvfRTYxcOtNexPhZGuv2xW5a13kLvdor45hcPFZ121ZZfsEOMuobZQY9PkF3L3a6yFvlQ2OegNhhShJYa+HWAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<g id="Layer">
+		<use id="Layer" href="#img1" x="0" y="0"/>
+	</g>
+</svg>
